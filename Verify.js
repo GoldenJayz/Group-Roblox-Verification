@@ -22,6 +22,21 @@ client.on("message", message => {
         if (!args.length) {
             message.channel.send("You need to provide a group ID");
         } else if (args.length) {
+            /*
+            Better way to randomize an array
+            
+            ------------------------------------
+            
+            var mixedwords = [];
+            
+            for(let i = 0; i < 5; i++) {
+                const item = ['onion', 'rabbit', 'fart'];
+                const randomitem = item[Math.floor(Math.random() * item.length)];
+                mixedwords.push(randomitem);
+            }
+            
+            */
+            
             var randa = ["pepper", "onion", "ravioli", "cheese", "pizza", "french", "light", "bulb", "cricket"];
 
 
